@@ -1,0 +1,37 @@
+body {
+    margin: 0 0;
+    padding: 0 0;
+}
+
+.top-navbar {
+    background-color: rgb(64, 52, 92);
+    font-weight: 600;
+    margin: 0 0;
+    padding: 1.2rem;
+}
+
+.top-navbar > * {
+    margin: 0;
+    padding-inline-start: 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    display: inline-block;
+    margin-inline: 1em;
+}
+
+#current-page {
+    background:rgb(105, 78, 168);
+}
+
+.nav-link a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-link:hover {
+    color:rgb(186, 186, 209);
+    cursor: pointer;
+}
