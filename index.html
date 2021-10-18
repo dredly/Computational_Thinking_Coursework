@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>My Website</title>
+    <title>Computational Thinking</title>
 </head>
 
 <body>
@@ -17,11 +17,62 @@
             <li class="nav-item nav-link"><a href="reflection.html">Reflection</a></li>
         </ul>
     </nav>
-    <article>
-        <p>
-
-        </p>
+    <article class="bg-and-padding">
+        <section>
+            <h1>Computational Thinking</h1>
+            <p>
+                Computational thinking could be considered useful in almost any field, but to become a developer it is
+                absolutely crucial. Computers may be good at processing large amounts of data extremely fast, but they
+                are not intelligent like humans. Therefore we must be extremely specific with our programming, and
+                understand exactly what we are telling a computer to do, as it will follow instructions literally and
+                sometimes lead to unexpected results.
+            </p>
+            <p>
+                I recently read an article which reminded me of this, and which shows that even the much-acclaimed
+                advanced machine learning and genetic algorithms we hear about are still just following a set of
+                instructions, albeit very complex ones, without any thought. The author describes his time working for
+                an AI startup, in which they used a game called <span class="italic"> Airships: Conquer the Skies</span>
+                to test their new genetic
+                algorithm. In the game, players first design an airship from given components, and then battle against
+                other airships. The algorithm was given the simple instruction to defeat as many enemies as possible
+                using the cheapest possible build. It settled on a strategy to complete this: building a tiny ship that
+                would fire missiles point blank at other ships, only to destroy itself moments later. According to the
+                given parameters, this was a winning strategy, but not applicable to the real world. The program was not
+                explicitly told to factor in self preservation, so it did not.
+            </p>
+        </section>
+        <section>
+            <p>
+                All this means that we must adapt our thinking to be more compatible with how computers work. For
+                example, we should be aware that since computers inherently work in binary, there can be unexpected
+                inaccuracies when dealing with floating point numbers. Random numbers can be another thing to look out
+                for, as the default random number function of a language can often use a deterministic algorithm,
+                meaning it would produce the same result if the initial conditions can be replicated. So while to human
+                eyes the number could appear completely random, it would not be advised to use it as a security key in a
+                program.
+            </p>
+            <p>
+                Finally, an important concept that came up a lot in seminars for this module was scalability. Computers
+                excel at doing large amounts of simple calculations, so we should take advantage of this whenever we
+                can. Some methods of solving a problem work well at a small scale, but do not scale up efficiently. One
+                example of this discussed in the course was the idea of making tea for one person vs making tea for a
+                hundred. Brewing each cup separately with a single teabag would not be considered scalable in this
+                instance.
+            </p>
+            <p>
+                To conclude, computational thinking, with its core concepts of decomposition, abstraction, pattern
+                recognition and algorithms, provides a useful framework for problem solving in all fields, but
+                especially in my chosen field of computing. Ideas such as scalability and DRY (don’t repeat yourself)
+                will be sure to help me in many future projects.
+            </p>
+        </section>
     </article>
+    <section id="references" class="bg-and-padding">
+        <h2>References</h2>
+        <ul>
+
+        </ul>
+    </section>
     <footer>
         All images are either my own or released under a creative commons license
     </footer>

@@ -7,6 +7,10 @@ ul {
     list-style: none;
 }
 
+.italic {
+    font-style: italic;
+}
+
 .top-navbar {
     background-color: rgb(64, 52, 92);
     font-weight: 600;
