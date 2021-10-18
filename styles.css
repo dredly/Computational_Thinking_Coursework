@@ -7,7 +7,7 @@ ul {
     list-style: none;
 }
 
-.italic {
+.italics {
     font-style: italic;
 }
 
@@ -135,9 +135,11 @@ footer {
 @media (min-width: 1000px) {
     article {
         display: flex;
+        justify-content: center;
     }
     article > * {
         margin-inline: 2em;
+        flex-basis: 50%;
     }
     #image-container figure {
         max-width: 45%;
