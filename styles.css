@@ -1,37 +1,141 @@
-body {
+body, body * {
     margin: 0 0;
     padding: 0 0;
+}
+
+ul {
+    list-style: none;
 }
 
 .top-navbar {
     background-color: rgb(64, 52, 92);
     font-weight: 600;
-    margin: 0 0;
-    padding: 1.2rem;
 }
 
 .top-navbar > * {
-    margin: 0;
-    padding-inline-start: 0;
+    height: 3em;
     display: flex;
     align-items: center;
 }
 
 .nav-item {
-    display: inline-block;
-    margin-inline: 1em;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
 #current-page {
     background:rgb(105, 78, 168);
 }
 
-.nav-link a {
-    text-decoration: none;
-    color: white;
+.nav-link {
+    transition: 0.2s;
 }
 
 .nav-link:hover {
-    color:rgb(186, 186, 209);
     cursor: pointer;
+    font-size: larger;
+}
+
+.nav-link a {
+    text-decoration: none;
+    color: white;
+    margin-inline: 1em;
+}
+
+.bg-and-padding {
+    padding: 2em;
+    background:rgb(186, 186, 209);
+}
+
+h1 {
+    margin-bottom: 0.7em;
+}
+
+p {
+    margin-bottom: 0.5em;
+    line-height: 1.5em;
+}
+
+sup {
+    line-height: 1;
+}
+
+#image-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 100%;
+    font-size: 0.7em;
+    padding-block: 0.5em;
+}
+
+#image-container figure {
+    max-width: 40%;
+}
+
+#image-container img {
+    max-width: 100%;
+}
+
+#references {
+    padding-top: 0.2em;
+    font-size: 0.8em;
+}
+
+#references h2 {
+    border-top: 2px solid rgba(12, 10, 17, 0.3);
+    margin-bottom: 1.5em;
+}
+
+#references li {
+    margin-block: 0.5em;
+}
+
+/* Fixes an issue where long hyperlinks were interfering with the page layout*/
+#references a {
+    word-break: break-all;
+}
+
+footer {
+    padding: 1em;
+    background: rgb(39, 30, 61);
+    color: white;
+    font-size: smaller;
+}
+
+
+
+@media (min-width: 570px) {
+    h1 {
+        margin-bottom: 1em;
+        font-size: 2em;
+    }
+
+    #image-container figure {
+        max-width: 25%;
+    }
+}
+
+@media (min-width: 720px) {
+    .nav-item {
+        flex: 0;
+    }
+    .nav-link a {
+        margin-inline: 2em;
+    }
+}
+
+@media (min-width: 1000px) {
+    article {
+        display: flex;
+    }
+    article > * {
+        margin-inline: 2em;
+    }
+    #image-container figure {
+        max-width: 45%;
+    }
 }

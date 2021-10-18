@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,14 +8,83 @@
     <link rel="stylesheet" href="styles.css">
     <title>Reflection</title>
 </head>
+
 <body>
     <nav class="top-navbar">
         <ul>
-            <li class="nav-item nav-link" ><a href="index.html">Home</a></li>
+            <li class="nav-item nav-link"><a href="index.html">Home</a></li>
             <li class="nav-item nav-link"><a href="bio.html">Biography</a></li>
             <li class="nav-item nav-link" id="current-page"><a href="reflection.html">Reflection</a></li>
         </ul>
     </nav>
-    
+    <article class="bg-and-padding">
+        <section>
+            <h1>Reflection</h1>
+            <p>
+                I have found this module very helpful, as it helped me apply computational thinking to the fundamentals
+                of
+                programming and improve my understanding. For example, using an invented programming language (which the
+                cohort
+                unanimously decided to call BennyScript) with limited syntax forced me to think carefully about every
+                problem
+                instead of using convenient methods that I have grown used to. Notably, I was forced to approach the
+                problem
+                of
+                summing digits in a different way. It was necessary to use the modulo operator to extract the individual
+                digits,
+                as opposed to simply converting the number to a string and using indices of the characters.
+            </p>
+            <p>
+                One of the most important things I learned while working on this assignment was that problems can be
+                solved
+                in
+                many different ways. Often, the best way to find a solution is simply to search on the internet, being
+                specific
+                and precise in the wording, but sometimes it is easier to look into existing source code that
+                accomplishes
+                the
+                same thing. For example, when adding references with the &lt;sup&gt; element to the biography section, I
+                found
+                that
+                they were interfering with the line spacing. I then remembered that Wikipedia articles contain
+                superscripted
+                references without changing the line spacing, so I went into DevTools to inspect the CSS, and found that
+                I
+                simply needed to set the line-height property to 1 inside the &lt;sup&gt; element.
+            </p>
+        </section>
+        <section>
+            <p>
+                While the core functionality of any code is of course crucial, I have learned about the almost equal
+                importance of readability and consistency of code. This was especially apparent in my CSS stylesheet,
+                where I was gradually adding properties to different parts of the document while building up the design.
+                This unfortunately resulted in a CSS file with no clear order or organisation.
+                To overcome this problem, I sketched out a template, linked <a href="css_template.html">here</a> for how
+                to organise my stylesheet, which I intend to
+                use for future projects. Another step I took to improve the organisation of the project was to have one
+                base CSS stylesheet for styles that would be common to all three HTML files, and then another for each
+                HTML file.
+            </p>
+            <p>
+                One way to improve this project would be through HTML templating. As can be seen in the source code, the
+                HTML markup for the navbar and footer is repeated all three HTML documents, which is not good
+                programming practice. Though it is beyond the scope of this coursework, I have done some research into
+                HTML templating, and it appears that having a base HTML file and simply extending it as needed would
+                solve this code duplication.
+            </p>
+            <p>
+                In conclusion, this coursework has shown me the importance of carefully planning and structuring a
+                project of any size. This will only become more crucial in the future, as many factors will introduce
+                more complexity, such as version control and dynamic elements in the webpage. The work I did in
+                refactoring my CSS files to make them more clearly readable will be especially useful to me going
+                forward.
+            </p>
+        </section>
+    </article>
+    <footer>
+        All images are either my own or released under a creative commons license
+    </footer>
+
 </body>
+
 </html>
