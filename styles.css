@@ -1,3 +1,5 @@
+/* ----- General properties ----- */
+
 body, body * {
     margin: 0 0;
     padding: 0 0;
@@ -7,9 +9,18 @@ ul {
     list-style: none;
 }
 
+    /* --- General purpose classes --- */
+
 .italics {
     font-style: italic;
 }
+
+.bg-and-padding {
+    padding: 2em;
+    background:rgb(186, 186, 209);
+}
+
+/* ----- Navbar properties ----- */
 
 .top-navbar {
     background-color: rgb(64, 52, 92);
@@ -28,31 +39,25 @@ ul {
     align-items: center;
     justify-content: center;
     height: 100%;
+    transition: 0.2s;
 }
 
 #current-page {
     background:rgb(105, 78, 168);
 }
 
-.nav-link {
-    transition: 0.2s;
-}
-
-.nav-link:hover {
+.nav-item:hover {
     cursor: pointer;
     font-size: larger;
 }
 
-.nav-link a {
+.nav-item a {
     text-decoration: none;
     color: white;
     margin-inline: 1em;
 }
 
-.bg-and-padding {
-    padding: 2em;
-    background:rgb(186, 186, 209);
-}
+
 
 h1 {
     margin-bottom: 0.7em;
@@ -125,7 +130,7 @@ footer {
     .nav-item {
         flex: 0;
     }
-    .nav-link a {
+    .nav-item a {
         margin-inline: 2em;
     }
 }
