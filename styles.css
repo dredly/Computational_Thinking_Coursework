@@ -16,8 +16,8 @@ ul {
 }
 
 .bg-and-padding {
-    padding: 2em;
     background:rgb(186, 186, 209);
+    padding: 2em;
 }
 
 /* ----- Navbar properties ----- */
@@ -28,17 +28,17 @@ ul {
 }
 
 .top-navbar > * {
-    height: 3em;
-    display: flex;
     align-items: center;
+    display: flex;
+    height: 3em;
 }
 
 .nav-item {
+    align-items: center;
     display: flex;
     flex: 1;
-    align-items: center;
-    justify-content: center;
     height: 100%;
+    justify-content: center;
     transition: 0.2s;
 }
 
@@ -52,20 +52,20 @@ ul {
 }
 
 .nav-item a {
-    text-decoration: none;
     color: white;
     margin-inline: 1em;
+    text-decoration: none;
 }
 
-
+/* ----- Main Body Properties ----- */
 
 h1 {
     margin-bottom: 0.7em;
 }
 
 p {
-    margin-bottom: 0.5em;
     line-height: 1.5em;
+    margin-bottom: 0.5em;
 }
 
 sup {
@@ -73,25 +73,23 @@ sup {
 }
 
 #image-container {
-    display: flex;
     align-items: center;
+    display: flex;
+    font-size: 0.7em;
     justify-content: space-around;
     max-width: 100%;
-    font-size: 0.7em;
     padding-block: 0.5em;
-}
-
-#image-container figure {
-    max-width: 40%;
 }
 
 #image-container img {
     max-width: 100%;
 }
 
+    /* --- References Section Properties --- */
+
 #references {
-    padding-top: 0.2em;
     font-size: 0.8em;
+    padding-top: 0.2em;
 }
 
 #references h2 {
@@ -108,12 +106,16 @@ sup {
     word-break: break-all;
 }
 
+/* ----- Footer Properties ----- */
+
 footer {
-    padding: 1em;
     background: rgb(39, 30, 61);
     color: white;
     font-size: smaller;
+    padding: 1em;
 }
+
+/* ----- Screen-width Media Queries ----- */
 
 @media (min-width: 570px) {
     h1 {
@@ -141,8 +143,8 @@ footer {
         justify-content: center;
     }
     article > * {
-        margin-inline: 2em;
         flex-basis: 50%;
+        margin-inline: 2em;
     }
     #image-container figure {
         max-width: 45%;

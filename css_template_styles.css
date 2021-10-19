@@ -5,11 +5,11 @@ body {
 }
 
 pre {
-    margin: 0;
     background: rgb(39, 30, 61);
     color: white;
-    font-size: 2.5vw;
     flex: 0 1 400px;
+    font-size: 2.5vw;
+    margin: 0;
     padding-inline-end: 1em;
 }
 
